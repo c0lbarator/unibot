@@ -18,6 +18,7 @@
 }
 
 body{
+	background-color: #99999;
 	height: 100%;
 	font: 100% "Impact, Charcoal, Arial, sans-serif",sans-serif;
 	margin:0;
@@ -47,7 +48,7 @@ button:active{
 	float: left;
 	width: 60px;
 	height: 60px;
-	margin-left: 10px;
+	margin-left: 0px;
 	padding:0;
 }
 
@@ -56,7 +57,7 @@ button:active{
 	color:#ffffff;
 	background-color: #3b3b3b;
 	font: bold 18px "Impact, Charcoal, Arial, sans-serif", sans-serif;
-	width: 280px;
+	width: 270px;
 	height: 60px;
 	margin: 0;
 	padding:0;
@@ -65,7 +66,7 @@ button:active{
 .grey_box{
 	float: left;
 	color:#ffffff;
-	background-color: #3b3b3b;
+	background-color: #006a9d;
 	font: bold 18px "Impact, Charcoal, Arial, sans-serif", sans-serif;
 	line-height: 60px;
 	width: 70px;
@@ -75,7 +76,7 @@ button:active{
 }
 
 #title{
-	background-color: #f6372f;
+	background-color: #000;
 	width: 100%;
 	height: 150px;
 	margin: 0;
@@ -83,7 +84,7 @@ button:active{
 }
 
 .logo{
-	background-color: #3b3b3b;
+	background-color: #000;
 	width: 800px;
 	height: 150px;
 	margin: 0;
@@ -95,7 +96,7 @@ button:active{
 	float: left;
 	overflow: auto;
 	background-color: #ffffff;
-	width: 300px;
+	width: 700px;
 	height:920px;
 	padding: 0px; 
 }
@@ -116,6 +117,7 @@ button:active{
 	height:870px;
 	padding: 10px; 
 	margin-top: 10px;
+	margin-left: 400px;
 }
 .console_entry{
 	
@@ -145,5 +147,5 @@ button:active{
 }
 
 .padding10{
-	padding: 10px;
+	padding: 20px;
 }
