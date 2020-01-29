@@ -2,7 +2,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
-		<title>Pathfinder</title>
+		<title>Unibot</title>
 		
 		<link rel="stylesheet" href="css/content.css" />
 		<link rel="stylesheet" href="css/rangeslider.css">
@@ -18,67 +18,63 @@
 			</div>
 		</div>
 		<!-- LEFT MENU -->
-		<div class="left_menu_container">
+		<div class="left_menu_container" style="border-right-style: solid;border-right-width: 1px;margin-left: 10px;margin-top: 10px;border-left-width: 1px;border-left-style: solid;border-top-width: 1px;border-top-style: solid;border-bottom-width: 1px;border-bottom-style: solid;">
 			<!-- START SERVER BUTTON -->
 			<div class="menu_row">
 				<button id="start_server">
-				<img src="images/btn_start_server.png"/>
+				<img src="images/btn_start_server.png" style="width: 280px;height: 60px;margin-left: 170px;">
 				</button>
 			</div>
 			<!-- STOP SERVER -->
 			<div class="menu_row">
-				<button class="grey_wide_button" id="stop_server">Остановить СОКЕТ-СЕРВЕР</button>
+				<button class="grey_wide_button" id="stop_server">Остановить Сервер</button>
 			</div>
 			<!-- CLEAR CONSOLE -->
 			<div class="menu_row">
-				<button class="grey_wide_button" id="clear_console">Очистить консоль</button>
+				<button class="grey_wide_button" style="margin-left: 350px;margin-top: -70px;" id="clear_console">Очистить консоль</button>
 			</div>
 			<!-- FEED PAPER ROW -->
 			<div class="menu_row">
-				<div class="grey_box" align=center>Мотор листа</div>
-				<button class="red_box_btn" id="feed_paper_in">
+				<div class="grey_box" style="margin-top: -60px;" align=center>Мотор листа</div>
+				<button class="red_box_btn" style="margin-top: -60px;margin-left: 70px;" id="feed_paper_in">
 				<img src="images/btn_up.png"/>
 				</button>
-				<button class="red_box_btn" id="feed_paper_out">
+				<button class="red_box_btn" style="margin-top: -60px;margin-left: 130px;" id="feed_paper_out">
 				<img src="images/btn_down.png"/>
 				</button>
-				<button class="red_box_btn" id="stop_feed_paper">
+				<button class="red_box_btn" style="margin-top: -60px;margin-left: 190px;" id="stop_feed_paper">
 				<img src="images/btn_stop.png"/>
 				</button>
 			</div>
 			<!-- SET PEN ROW -->
 			<div class="menu_row">
-				<div class="grey_box" align=center>Ручка</div>
-				<button class="red_box_btn" id="move_pen_up">
+				<div class="grey_box" align=center style="margin-top: -130px;margin-left: 350px;">Ручка</div>
+				<button class="red_box_btn" style="margin-top: -130px;margin-left: 420px;" id="move_pen_up">
 				<img src="images/btn_up.png"/>
 				</button>
-				<button class="red_box_btn" id="move_pen_down">
+				<button class="red_box_btn" style="margin-top: -130px;margin-left: 480px;" id="move_pen_down">
 				<img src="images/btn_down.png"/>
 				</button>
-				<button class="red_box_btn" id="set_pen_position">
+				<button class="red_box_btn" style="margin-top: -130px;margin-left: 540px;" id="set_pen_position">
 				<img src="images/btn_confirm.png"/>
 				</button>
 			</div>
-			<!-- DISPLAY INFO ROW -->
-			<div class="menu_row">
-				<button class="grey_wide_button" id="get_info">Показать статус</button>
-			</div>
 			<!-- CALIBRATE -->
 			<div class="menu_row">
-				<button class="grey_wide_button" id="calibrate">Откалибровать</button>
+				<button class="grey_wide_button" style="margin-left: 170px;margin-top: -100px;" id="calibrate">Откалибровать</button>
 			</div>
 			<!-- FORCE STOP -->
 			<div class="menu_row">
-				<button class="grey_wide_button" id="force_stop">Принудительная остановка</button>
+				<button class="grey_wide_button" style="margin-left: 170px;margin-top: -100px;" id="force_stop">Остановить</button>
 			</div>
 			<!-- DRAW MAZE -->
-			<div class="menu_row" style="height:230px">
+			<div class="menu_row" style="height:230px;margin-top: -100px;margin-left: 10px;">
 				<div>
-					<div class="slider_label">WIDTH:<span id="width_label">5<span></div>
+					<div class="slider_label">WIDTH:<span id="width_label">12<span></div>
 					<input id="width_slider" type="range" min="3" max="20" data-rangeslider>
 				</div>
 				<div>
-					<div class="slider_label">HEIGHT:<span id="height_label">5</span></div>
+					<div class="slider_label">HEIGHT:<span id="height_label">12</span></div>
 					<input id="height_slider" type="range" min="3" max="20" data-rangeslider>
 				</div>
 				<div>
@@ -90,14 +86,14 @@
 				</button>
 			</div>
 			<!-- DRAW SVG -->
-			<div class="menu_row" style="height:160px;">
+			<div class="menu_row" style="height:160px;margin-left: 350px;margin-top: -230px;" style="height:160px;">
 				
 				<input id="uploadFile" placeholder="Choose File" disabled="disabled" style="margin-bottom:10px;width: 280px;" />
 					<div class="fileUpload btn btn-primary">
-					    <div class="grey_wide_button" align="center" style="width:150px;height:40px;padding-top:20px">Выбрать файл для рисования</div>
-					    <input id="uploadBtn" type="file" class="upload" style="height: 50px;width: 150px;" />
+					    <div class="grey_wide_button" align="center" style="width:250px;height:60px;padding-top:20px">Выбрать файл для рисования</div>
+					    <input id="uploadBtn" type="file" class="upload" style="height: 60px;width: 250px;" />
 					</div>
-					<button class="grey_wide_button" id="upload_svg" style="width:120px;margin-left:10px;">Загрузить файл для рисования</button>
+					<button class="grey_wide_button" id="upload_svg" style="width:250px;margin-left:0px;">Загрузить файл для рисования</button>
 				
 				<button id="draw_svg" style="margin-top:10px;">
 				<img src="images/btn_draw_svg.png"/>
@@ -317,3 +313,5 @@ $( "body" ).keyup(function(e) {
 
 
 
+
+		
